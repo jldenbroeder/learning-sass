@@ -24,32 +24,35 @@ h3{
 }
 .container{
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 1fr;
   width: $width;
-  max-width: 960px;
+  max-width: $max-width;
   margin: 0 auto;
+}
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+     -moz-background-size: $size;
+      -ms-background-size: $size;
+       -o-background-size: $size;
+          background-size: $size;
 }
 .container header{
   display: grid;
-  /*grid-template-rows: 1fr;
-  grid-template-columns: 1fr;*/
   min-height: 250px;
   background-image: url("../img/web-design.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
   background-position:center;
-}
-.container header #citation{
-  justify-self: end;
-  align-self: flex-end;
-  text-align: right;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 20px 0px 0px 0px;
+  @include background-size(cover);
+  #citation{
+    justify-self: end;
+    align-self: flex-end;
+    text-align: right;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px 0px 0px 0px;
+  }
 }
 header q{
   font-family: Georgia, "Times New Roman", serif;
