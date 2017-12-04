@@ -1,0 +1,20 @@
+$rougeh2: #4b0000;
+$rougeh3: #622c2c;
+$bgc: rgb(173, 173, 173);
+$fontp: Arial, Helvetica, sans-serif;
+$size14: 14px;
+body{
+  background-color: $bgc;
+  padding: 0px;
+  margin: 0px;
+}
+p{
+  font: $fontp;
+  font-size: $size14;
+}
+h2{
+  color: $rougeh2;
+}
+h3{
+  color: $rougeh3;
+}
