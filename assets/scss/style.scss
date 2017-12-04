@@ -29,7 +29,33 @@ h3{
   max-width: 960px;
   margin: 0 auto;
 }
-
+.container header{
+  display: grid;
+  /*grid-template-rows: 1fr;
+  grid-template-columns: 1fr;*/
+  min-height: 250px;
+  background-image: url("../img/web-design.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+.container header #citation{
+  justify-self: end;
+  align-self: flex-end;
+  text-align: right;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px 0px 0px 0px;
+}
+header q{
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 24px;
+}
 @import "nav.scss";
 
 @media screen and (min-width: 720px)
