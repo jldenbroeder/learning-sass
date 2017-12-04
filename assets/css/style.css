@@ -13,6 +13,18 @@ h2 {
 h3 {
   color: #622c2c; }
 
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.icone-fontawesome {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #cccccc; }
+
 .container {
   display: grid;
   display: -ms-grid;
@@ -44,6 +56,11 @@ header q {
   font-style: italic;
   font-size: 24px; }
 
+aside q {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 16px; }
+
 .container nav {
   background-color: #20212d;
   text-align: right;
@@ -66,6 +83,28 @@ header q {
       text-decoration: none; }
       .container nav ul a:hover {
         color: #d1d1d1; }
+
+.container section {
+  background-color: #fff;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  /*baseline; stretch;*/ }
+
+.container article {
+  padding: 10px 30px 10px 20px; }
+
+.container aside {
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+  background-color: #c3c3c3;
+  text-align: right; }
+
+.container footer {
+  padding: 10px;
+  text-align: right;
+  background-color: #20212d;
+  color: #ffffff; }
 
 @media screen and (min-width: 720px) {
   .container ul {
