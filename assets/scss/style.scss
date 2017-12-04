@@ -1,8 +1,11 @@
+$width: 80%;
+$max-width: 960px;
 $rougeh2: #4b0000;
 $rougeh3: #622c2c;
 $bgc: rgb(173, 173, 173);
 $fontp: Arial, Helvetica, sans-serif;
 $size14: 14px;
+
 
 body{
   background-color: $bgc;
@@ -22,10 +25,18 @@ h3{
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  width: 80%;
+  width: $width;
   max-width: 960px;
   margin: 0 auto;
 }
-.container > *{
-}
+
 @import "nav.scss";
+
+@media screen and (min-width: 720px)
+{
+@import "720min.scss";
+}
+@media screen and (max-width: 720px)
+{
+@import "720max.scss";
+}

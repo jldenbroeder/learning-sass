@@ -1,0 +1,23 @@
+.container ul{
+  display:inline-flex;
+}
+ul li{
+  padding: 10px;
+}
+.container section{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  min-height: 250px;
+}
+.container section article{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  text-align: left;
+}
+.container section aside{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  padding: 30px 30px 30px 30px;
+  border-radius: 0px 0px 0px 20px;
+}
